@@ -1,1 +1,0 @@
-Ctci solutions in python
