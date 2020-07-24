@@ -57,4 +57,3 @@ if isEditDistanceOne(s1, s2):
 else:
     print("No")
 
-# This code is contributed by Bhavya Jain
