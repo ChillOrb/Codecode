@@ -26,3 +26,19 @@ def sortedArrayToBST(arr):
     # values >arr[mid] 
     root.right = sortedArrayToBST(arr[mid+1:]) 
     return root 
+
+def preOrder(node): 
+    if not node: 
+        return
+      
+    print node.data, 
+    preOrder(node.left) 
+    preOrder(node.right)  
+  
+
+#driver code
+  
+arr = [1, 2, 3, 4, 5, 6, 7] 
+root = sortedArrayToBST(arr) 
+print "PreOrder Traversal of constructed BST ", 
+preOrder(root) 
