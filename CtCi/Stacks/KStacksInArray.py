@@ -114,4 +114,3 @@ if __name__ == "__main__":
 
 	kstacks.printstack(0) 
 
-# This code is contributed by Varun Patil 
