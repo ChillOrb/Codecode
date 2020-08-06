@@ -9,4 +9,4 @@ for i in nums:
     print(output)
 
 
-# Do recursive too using binary representation ..
+# Do recursive too using binary representation .. check https://www.youtube.com/watch?v=bGC2fNALbNU
