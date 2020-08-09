@@ -1,3 +1,4 @@
+#O(MXN) time
 def zero_matrix(matrix):
     m = len(matrix)
     n = len(matrix[0])
@@ -27,3 +28,6 @@ def nullify_row(matrix, row):
 def nullify_col(matrix, col):
     for i in range(len(matrix)):
         matrix[i][col] = 0
+        
+        
+# O(1) space https://www.youtube.com/watch?v=ZzpJgRvqSJQ
