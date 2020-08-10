@@ -1,3 +1,5 @@
+
+#O(n) 
 s1 = 'waterbottle'
 s2 = "erbottlewat"
 
