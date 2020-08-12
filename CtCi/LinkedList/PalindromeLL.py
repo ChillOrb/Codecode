@@ -48,7 +48,7 @@ def isPalindrome(self, head):
 
 
 def is_palindrome(self):
-        # Method 1:
+        # using rev[-1] Method 1: 
         # s = ""
         # p = self.head 
         # while p:
@@ -56,7 +56,7 @@ def is_palindrome(self):
         #     p = p.next
         # return s == s[::-1]
 
-        # Method 2:
+        # using stacks Method 2:
         # p = self.head 
         # s = []
         # while p:
