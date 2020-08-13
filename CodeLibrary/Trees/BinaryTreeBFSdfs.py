@@ -1,3 +1,4 @@
+#https://www.youtube.com/watch?v=6oL-0TdVy28
 class Node(object):
     def __init__(self, value):
         self.value = value
