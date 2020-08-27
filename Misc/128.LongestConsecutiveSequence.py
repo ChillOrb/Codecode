@@ -18,3 +18,8 @@ def longestConsecutive(nums):
 
 l = [5, 6, 2, 99, 4, 100, 3]
 print(longestConsecutive(l))
+
+
+#read https://www.geeksforgeeks.org/longest-consecutive-subsequence/
+
+# use a hash map and checking for n-1 is so that we know that we have already calcualted longest subsequence for that sequence. 
