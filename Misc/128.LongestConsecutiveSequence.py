@@ -1,3 +1,5 @@
+#https://www.youtube.com/watch?v=x5hQvnUcjiM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=23
+
 def longestConsecutive(nums):
     longest_streak = 0
     num_set = set(nums)
@@ -23,3 +25,5 @@ print(longestConsecutive(l))
 #read https://www.geeksforgeeks.org/longest-consecutive-subsequence/
 
 # use a hash map and checking for n-1 is so that we know that we have already calcualted longest subsequence for that sequence. 
+
+
