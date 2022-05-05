@@ -1,31 +1,30 @@
-from collections import Counter
 class Solution:
     def frequencySort(self, s: str) -> str:
-        
-        d=Counter(s)
-        count=[]
-        for key,val in d.items():
-            times=val
-            while times!=0:
-                count.append((val,key))
-                times-=1
-        
-        print(count)
-        
-        heap=[]
-        
-        out=[]
-        for key,val in count:
-            heapq.heappush(heap,(key,val))
+        s=list(s)
+        s.sort()
+    
+        final=[]
+        curr_sub=[]
+        curr_sub.append(s[0])
+        for char in s[1:]:
+            if char !=curr_sub[-1]:
+                
+                final.append("".join(curr_sub))
+                curr_sub=[]
+                
+                
+            curr_sub.append(char)
             
-        print(heap)
+        final.append("".join(curr_sub))
+        
+        
+        final.sort(key=lambda s:len(s),reverse=True)
+        
+        return "".join(final)
             
-        for i in range(0,len(heap)):
-            out.append(heapq.heappop(heap)[1])
-        print(out)
-        return "".join(out[::-1])
+            
             
         
         
-        
+            
         
