@@ -8,7 +8,7 @@ class Solution:
             heapq.heappush(heap,(abs(x-arr[i]),arr[i]))
             
           
-                
+        print(heap)        
         final=[]        
         while k>0:
             final.append(heapq.heappop(heap)[1])
