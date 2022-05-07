@@ -1,27 +1,35 @@
-from heapq import heappush, heappop
 from collections import Counter
 class Solution:
-    def leastInterval(self, tasks, n):
-        """
-        :type tasks: List[str]
-        :type n: int
-        :rtype: int
-        """
-        curr_time, h = 0, []
-        for k,v in Counter(tasks).items():
-            heappush(h, (-1*v, k))
-        while h:
-            i, temp = 0, []
-            while i <= n:
-                curr_time += 1
-                if h:
-                    x,y = heappop(h)
-                    if x != -1:
-                        temp.append((x+1,y))
-                if not h and not temp:
+    def leastInterval(self, tasks: List[str], n: int) -> int:
+        
+        d1=Counter(tasks)
+
+
+        heap=[]
+
+        out=[]
+        for key,val in d1.items():
+
+            heapq.heappush(heap,(-val,key))
+
+        time=0  
+
+
+        while heap:
+            i=0
+            temp=[]
+            while i<=n:
+                time+=1
+                if heap:
+                    val,key=heapq.heappop(heap)
+                    out.append(key)
+                    if val!=-1:
+                        temp.append((val+1,key))
+                if not heap and not temp:
                     break
                 else:
-                    i += 1
+                    i+=1
             for item in temp:
-                heappush(h, item)
-        return curr_time
+                heapq.heappush(heap,item)
+
+        return time
