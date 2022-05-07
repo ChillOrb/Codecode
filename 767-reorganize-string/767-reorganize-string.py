@@ -28,8 +28,9 @@ class Solution:
         out="".join(out)
         if len(out)!=len(s):
             return ""
-        
-        return out
+        else:
+            
+            return out
                 
                 
 
