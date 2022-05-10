@@ -3,8 +3,8 @@ class Solution:
         
         
         heap=[]
-        
-        for row in range(0,len(matrix)):
+        n=len(matrix)
+        for row in range(min(n,k)):
             heapq.heappush(heap,(matrix[row][0],row,0))
             
             
